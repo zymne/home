@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:id="@+id/sectionContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:hint="@string/title"
+                    android:inputType="textCapSentences|textAutoCorrect" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sectionTags"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tags"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:hint="@string/tags_separate_with_commas"
+                    android:inputType="textAutoCorrect" />
+
+                <TextView
+                        android:id="@+id/categoryLabel"                        
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/categories" />
+
+            </LinearLayout>
+
+            
+
+            <RelativeLayout
+                android:id="@+id/sectionLocation"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/locationText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/loading" />
+
+                <Button
+                    android:id="@+id/viewMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/locationText"
+                    android:text="@string/view_map"
+                    android:lines="1"
+                    android:maxWidth="110dp"
+                    android:ellipsize="end" />
+                <Button
+                    android:id="@+id/updateLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/viewMap"
+                    android:layout_toRightOf="@id/viewMap"
+                    android:text="@string/update_location"
+                    android:lines="1"
+                    android:maxWidth="110dp"
+                    android:ellipsize="end" />
+
+                <Button
+                    android:id="@+id/removeLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/updateLocation"
+                    android:layout_toRightOf="@id/updateLocation"
+                    android:text="@string/remove_location"
+                    android:lines="1"
+                    android:maxWidth="110dp"
+                    android:ellipsize="end" />
+            </RelativeLayout>
+    
+        </LinearLayout>
+    </ScrollView>   
+
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.wordpress.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"></uses-permission>
+    
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock"
+        android:hardwareAccelerated="true" > 
+             
+        
+        <activity
+            android:name="org.wordpress.android.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ui.posts.PostsActivity"/>
+        <activity android:name=".ui.posts.EditPostActivity"/>
+        <activity android:name=".ui.accounts.NewAccountActivity"/>
+        <activity android:name=".ui.accounts.SignupActivity"/>
+        <activity android:name=".ui.accounts.AccountSetupActivity"/>
+        <activity android:name=".ui.accounts.AdditionalSettingsActivity"/>
+        
+        
+        <!-- Services -->
+        <service
+            android:name=".util.PostUploadService"
+            android:label="Post Upload Service" >
+        </service>
+        
+    </application>
+
+</manifest>
