@@ -174,8 +174,10 @@ public class WPRestClient {
      */
     public void get(String path, Map<String, String> params, RetryPolicy retryPolicy, Listener listener, ErrorListener errorListener){
         // turn params into querystring
-        
-        RestRequest request = mRestClient.makeRequest(Method.GET, RestClient.getAbsoluteURL(path, params), null, listener, errorListener);
+            	    	
+        RestRequest request = mRestClient.makeRequest(Method.GET,         		
+        	"https://api.foursquare.com/v2/venues/search?" +
+        	"ll=40.7,-74&client_id=3GXVUMWMWGYM4KQU1FOHO1FNE2RFOGOCA3Q3W3ZKZEVVYJRY&client_secret=OTZHTPHAIZWHLMFFPBYKFU52VC3ULKMAC2KPGENMMIMRGKQU", null, listener, errorListener);
         if(retryPolicy == null) {
             retryPolicy = new DefaultRetryPolicy(REST_TIMEOUT_MS, REST_MAX_RETRIES_GET, REST_BACKOFF_MULT);
         }

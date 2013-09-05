@@ -1,6 +1,7 @@
 package org.wordpress.android;
 
 import java.net.SocketException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,9 +15,12 @@ import org.wordpress.android.util.WPRestClient;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
+import com.android.volley.Request.Method;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.wordpress.rest.Oauth;
+import com.wordpress.rest.RestClient;
+import com.wordpress.rest.RestRequest;
 
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -94,6 +98,16 @@ public class MainActivity extends Activity {
             shouldRestoreSelectedActivity = true;
         
         restClient = new WPRestClient(requestQueue, new OauthAuthenticator(), settings.getString(ACCESS_TOKEN_PREFERENCE, null));
+        
+        //RestRequest request = mRestClient.makeRequest(Method.GET, RestClient.getAbsoluteURL(path, params), null, listener, errorListener);
+                
+        Map<String, String> params = new HashMap<String, String>();
+        
+        params.put("ll", "40.7,-74");
+        params.put("client_id", "3GXVUMWMWGYM4KQU1FOHO1FNE2RFOGOCA3Q3W3ZKZEVVYJRY");
+        params.put("client_secret", "OTZHTPHAIZWHLMFFPBYKFU52VC3ULKMAC2KPGENMMIMRGKQU");
+        
+        restClient.get("https://api.foursquare.com/v2/venues/search", params, null, null, null);
         
         //registerForCloudMessaging(this);
 	}
