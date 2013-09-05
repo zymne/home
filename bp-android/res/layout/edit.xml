@@ -48,13 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:hint="@string/tags_separate_with_commas"
-                    android:inputType="textAutoCorrect" />
-
-                <TextView
-                        android:id="@+id/categoryLabel"                        
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/categories" />
+                    android:inputType="textAutoCorrect" />                
 
             </LinearLayout>
 
@@ -111,6 +105,24 @@
             </RelativeLayout>
     
         </LinearLayout>
-    </ScrollView>   
+        	    
+    </ScrollView>
+    
+    <RelativeLayout
+        android:id="@+id/format_bar" 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/format_bar_height"
+        android:visibility="gone">
+            <ImageButton
+            android:id="@+id/addPictureButton"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/wp_button_toggle"
+            android:contentDescription="@string/content_description_add_media"
+            android:scaleType="centerInside"
+            android:src="@drawable/camera" />   
+    </RelativeLayout>
+
 
 </FrameLayout>
