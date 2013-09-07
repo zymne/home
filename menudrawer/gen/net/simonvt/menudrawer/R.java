@@ -248,7 +248,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdActiveIndicator
+          @attr name android:mdActiveIndicator
         */
         public static final int MenuDrawer_mdActiveIndicator = 3;
         /**
@@ -264,7 +264,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdAllowIndicatorAnimation
+          @attr name android:mdAllowIndicatorAnimation
         */
         public static final int MenuDrawer_mdAllowIndicatorAnimation = 9;
         /**
@@ -276,7 +276,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdContentBackground
+          @attr name android:mdContentBackground
         */
         public static final int MenuDrawer_mdContentBackground = 0;
         /**
@@ -292,7 +292,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdDrawOverlay
+          @attr name android:mdDrawOverlay
         */
         public static final int MenuDrawer_mdDrawOverlay = 14;
         /**
@@ -308,7 +308,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdDrawerClosedUpContentDescription
+          @attr name android:mdDrawerClosedUpContentDescription
         */
         public static final int MenuDrawer_mdDrawerClosedUpContentDescription = 13;
         /**
@@ -324,7 +324,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdDrawerOpenUpContentDescription
+          @attr name android:mdDrawerOpenUpContentDescription
         */
         public static final int MenuDrawer_mdDrawerOpenUpContentDescription = 12;
         /**
@@ -336,7 +336,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdDropShadow
+          @attr name android:mdDropShadow
         */
         public static final int MenuDrawer_mdDropShadow = 7;
         /**
@@ -353,7 +353,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdDropShadowColor
+          @attr name android:mdDropShadowColor
         */
         public static final int MenuDrawer_mdDropShadowColor = 6;
         /**
@@ -369,7 +369,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdDropShadowEnabled
+          @attr name android:mdDropShadowEnabled
         */
         public static final int MenuDrawer_mdDropShadowEnabled = 4;
         /**
@@ -387,7 +387,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdDropShadowSize
+          @attr name android:mdDropShadowSize
         */
         public static final int MenuDrawer_mdDropShadowSize = 5;
         /**
@@ -403,7 +403,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdMaxAnimationDuration
+          @attr name android:mdMaxAnimationDuration
         */
         public static final int MenuDrawer_mdMaxAnimationDuration = 10;
         /**
@@ -415,7 +415,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdMenuBackground
+          @attr name android:mdMenuBackground
         */
         public static final int MenuDrawer_mdMenuBackground = 1;
         /**
@@ -433,7 +433,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdMenuSize
+          @attr name android:mdMenuSize
         */
         public static final int MenuDrawer_mdMenuSize = 2;
         /**
@@ -454,7 +454,7 @@ containing a value of this type.
 <tr><td><code>bottom</code></td><td>3</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdPosition
+          @attr name android:mdPosition
         */
         public static final int MenuDrawer_mdPosition = 15;
         /**
@@ -466,7 +466,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdSlideDrawable
+          @attr name android:mdSlideDrawable
         */
         public static final int MenuDrawer_mdSlideDrawable = 11;
         /**
@@ -484,7 +484,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name net.simonvt.menudrawer:mdTouchBezelSize
+          @attr name android:mdTouchBezelSize
         */
         public static final int MenuDrawer_mdTouchBezelSize = 8;
     };
